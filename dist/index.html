@@ -21,6 +21,7 @@
     console.log('you chose bat');
     let random_number  = Math.random()*3;
     let computer_choice = '';
+    let result = '';
     if(random_number>0 && random_number<=1){
       computer_choice = 'bat';
       console.log(computer_choice);
@@ -35,26 +36,86 @@
     }
 
     if(computer_choice==='ball'){
-      console.log('YOU WIN !!')
+      result = 'YOU  WIN  !!';
     }
     else if(computer_choice==='bat'){
-      console.log('TIE !!');
+      result = 'TIE  !!';
     }
     else{
-      console.log('I WIN !!');
+      result = 'I  WIN  !!';
     }
     
-    
+    alert(`computer chose  =  ${computer_choice} \n\n     ${result}`);
     
     ">Bat</button>
 
 
 
     <!-- ball button -->
-    <button class="border-[3px] bg-orange-400 font-serif font-bold tracking-widest border-black rounded-lg p-4 m-4 ">Ball</button>
+    <button class="border-[3px] bg-orange-400 font-serif font-bold tracking-widest border-black rounded-lg p-4 m-4 "  onclick="
+    console.log('you chose Ball');
+    random_number  = Math.random()*3;
+    computer_choice = '';
+    result = '';
+    if(random_number>0 && random_number<=1){
+      computer_choice = 'bat';
+      console.log(computer_choice);
+    }
+    else if(random_number>1 && random_number<=2){
+      computer_choice = 'ball';
+      console.log(computer_choice);
+    }
+    else{
+      computer_choice = 'stump';
+      console.log(computer_choice);
+    }
+
+    if(computer_choice==='ball'){
+      result = 'TIE  !!';
+    }
+    else if(computer_choice==='bat'){
+      result = 'I   WIN  !!';
+    }
+    else{
+      result = 'YOU  WIN  !!';
+    }
+    
+    alert(`computer chose  =  ${computer_choice} \n\n     ${result}`);
+    
+    ">Ball</button>
 
     <!-- stump button -->
-    <button class="border-[3px] bg-green-400 font-serif font-bold tracking-widest border-black rounded-lg p-4 m-4 ">Stump</button>
+    <button class="border-[3px] bg-green-400 font-serif font-bold tracking-widest border-black rounded-lg p-4 m-4 "  onclick="
+    console.log('you chose stump');
+    random_number  = Math.random()*3;
+    computer_choice = '';
+    result = '';
+    if(random_number>0 && random_number<=1){
+      computer_choice = 'bat';
+      console.log(computer_choice);
+    }
+    else if(random_number>1 && random_number<=2){
+      computer_choice = 'ball';
+      console.log(computer_choice);
+    }
+    else{
+      computer_choice = 'stump';
+      console.log(computer_choice);
+    }
+
+    if(computer_choice==='ball'){
+      result = 'I  WIN  !!';
+    }
+    else if(computer_choice==='bat'){
+      result = 'YOU   WIN  !!';
+    }
+    else{
+      result = 'TIE  !!';
+    }
+    
+    alert(`computer chose  =  ${computer_choice} \n\n     ${result}`);
+    
+    ">Stump</button>
   </div>
 
 </body>
